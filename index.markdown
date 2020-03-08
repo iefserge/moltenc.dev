@@ -97,4 +97,6 @@ protocols or behaviors. It's more aligned with the
 [data-oriented design](https://en.wikipedia.org/wiki/Data-oriented_design) paradigm.
 Code is compiled directly to machine code and doesn't use a garbage collector.
 
-To be continued...
+---
+
+[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}){: .btn .btn-blue }

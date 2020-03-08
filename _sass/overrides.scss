@@ -82,3 +82,17 @@ pre {
   background: radial-gradient(#f9f9f9 15%,transparent 16%) 0 0,radial-gradient(#f9f9f9 15%,transparent 16%) 5px 5px,radial-gradient(rgba(255,255,255,.1) 15%,transparent 20%) 0 1px,radial-gradient(rgba(255,255,255,.1) 15%,transparent 20%) 5px 6px;
   background-size: 10px 10px;
 }
+
+.btn-blue {
+  background-color: #0366d6;
+  background-image: none;
+  box-shadow: none;
+}
+
+.btn-blue,.btn-blue:hover,.btn-blue:focus,.btn-blue:active {
+  background-color: black;
+  background-image: none;
+  box-shadow: 0 0 0 0 black !important;
+  font-weight: 400;
+  outline: none !important;
+}
