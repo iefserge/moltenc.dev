@@ -25,7 +25,7 @@ Int fact(Int n) {
 trace fact(5) // prints "120"
 ```
 
-#### Printf
+#### C interop and printf
 
 ```swift
 import "stdio.h" {printf}
@@ -35,7 +35,7 @@ Int main() {
 }
 ```
 
-#### Option
+#### Optionals (nullable types)
 
 ```swift
 bothPositiveNumbers(Int ?x, Int ?y) {
@@ -47,7 +47,7 @@ trace bothPositiveNumbers(1, null) // prints "no"
 trace bothPositiveNumbers(null, 1) // prints "no"
 ```
 
-#### Enum
+#### Enum (Algebraic data types)
 
 ```swift
 enum Animal {
@@ -69,7 +69,7 @@ trace isTooHeavy(.elephant{weight = 6000})  // prints "false"
 trace isTooHeavy(.lion)                     // prints "false"
 ```
 
-#### Pointers
+#### Complex Raw Pointers
 
 ```swift
 extern var *raw malloc(Int size)
