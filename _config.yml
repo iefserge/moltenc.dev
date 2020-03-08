@@ -8,3 +8,5 @@ footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
 
 markdown: kramdown
 highlighter: rouge
+
+ga_tracking: UA-159983849-1
