@@ -1,5 +1,6 @@
 ---
 layout: home
+nav_order: 1
 ---
 # __rk__ -- yet another "systems" programming language
 
