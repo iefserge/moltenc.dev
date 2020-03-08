@@ -1,0 +1,8 @@
+title: rk language
+theme: just-the-docs
+search_enabled: false
+
+footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
+
+markdown: kramdown
+highlighter: rouge
