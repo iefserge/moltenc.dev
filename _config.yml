@@ -1,8 +1,8 @@
-title: rk language
+title: Molten C
 theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 search_enabled: false
-url: https://rklang.dev
+url: https://moltenc.dev
 
 footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
 

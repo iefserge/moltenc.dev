@@ -2,12 +2,12 @@
 layout: home
 nav_order: 1
 ---
-# __rk__ -- yet another "systems" programming language
+# __Molten C__ -- yet another "systems" programming language
 
 ## Introduction
 
-__rk__ (pronounced /ärk/ like arc) is a modern low-level programming language based on C.
-Unlike other similar languages, rk attempts to preserve as much C syntax,
+__Molten C__ is a modern low-level programming language based on C.
+Unlike other similar languages, Molten C attempts to preserve as much C syntax,
 semantics and spirit as possible while making language more pleasant and easy to use.
 
 Probably the best way to introduce programming language is to show code examples:
@@ -86,8 +86,8 @@ for (var p = values; *p != null; p++)
 
 It is not fully source compatible with C, as a few breaking changes had to be made to
 "modernize" it and make language more safe to use. This doesn't mean existing code
-needs to be rewritten, since __rk__ is binary compatible with C. This way C
-and rk code can be linked together and run side by side in the same program.
+needs to be rewritten, since __Molten C__ is binary compatible with C. This way C
+and Molten C code can be linked together and run side by side in the same program.
 
 In fact, C libraries can be directly imported and used without any "bindings".
 The core idea is to build on top of C, not replace it.
