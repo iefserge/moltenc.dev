@@ -8,7 +8,7 @@
   font-weight: 700;
 }
 
-.highlight .hll { background-color: black }
+.highlight .hll { background-color: black; font-weight: 700; }
 .highlight .c { color: black; font-style: italic } /* Comment */
 .highlight .err { color: black; border: 1px solid black } /* Error */
 .highlight .g { color: black } /* Generic */
@@ -20,7 +20,7 @@
 .highlight .p { color: black; font-weight: bold } /* Punctuation */
 .highlight .cm { color: black; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: black; font-style: italic } /* Comment.Preproc */
-.highlight .c1 { color: black; font-style: italic } /* Comment.Single */
+.highlight .c1 { color: #2e71ab; font-style: italic } /* Comment.Single */
 .highlight .cs { color: black; font-style: italic } /* Comment.Special */
 .highlight .gd { color: black } /* Generic.Deleted */
 .highlight .ge { color: black; font-style: italic } /* Generic.Emph */
