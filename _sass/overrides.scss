@@ -5,7 +5,7 @@
 }
 
 .site-title {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .highlight .hll { background-color: black; font-weight: 700; }
@@ -20,7 +20,7 @@
 .highlight .p { color: black; font-weight: bold } /* Punctuation */
 .highlight .cm { color: black; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: black; font-style: italic } /* Comment.Preproc */
-.highlight .c1 { color: #2e71ab; font-style: italic } /* Comment.Single */
+.highlight .c1 { color: #cf1020; font-style: italic } /* Comment.Single */
 .highlight .cs { color: black; font-style: italic } /* Comment.Special */
 .highlight .gd { color: black } /* Generic.Deleted */
 .highlight .ge { color: black; font-style: italic } /* Generic.Emph */
@@ -90,7 +90,7 @@ pre {
 }
 
 .btn-blue,.btn-blue:hover,.btn-blue:focus,.btn-blue:active {
-  background-color: black;
+  background-color: #cf1020;
   background-image: none;
   box-shadow: 0 0 0 0 black !important;
   font-weight: 400;
