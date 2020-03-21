@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="340px" height="340px" viewBox="0 0 340 340" enable-background="new 0 0 340 340" xml:space="preserve">
+<defs>
+  <linearGradient id="grad">
+    <stop offset="0%" stop-color="#ff7736" />
+    <stop offset="100%" stop-color="#cf1020" />
+  </linearGradient>
+</defs>
+<path fill="#1d1816" d="M40,0 h260 a40,40 0 0 1 40,40 v260 a40,40 0 0 1 -40,40 h-260 a40,40 0 0 1 -40,-40 v-260 a40,40 0 0 1 40,-40 z" />
+<path fill="url(#grad)" d="M248,100 a100,100,0,1,0,0,140 l-40,-30 a50,50,0,1,1,0,-80Z" />
+<g>
+</g>
+</svg>

@@ -248,7 +248,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-github-metadata
   jekyll-remote-theme
+  jekyll-seo-tag
+  jekyll-titles-from-headings
   just-the-docs
 
 BUNDLED WITH

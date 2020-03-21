@@ -1,12 +1,35 @@
-title: Molten C
-theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 search_enabled: false
-url: https://moltenc.dev
-
 footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
+aux_links:
+  "GitHub<span class=\"label label-yellow\">COMING SOON</span>":
+    - "/about"
+
+title: Molten C
+tagline: Yet another systems programming language
+description: Yet another systems programming language
+url: https://moltenc.dev
+author: iefserge
+logo: /logo.png
+image:
+  path: /logo.png
+  height: 256
+  width: 256
 
 markdown: kramdown
 highlighter: rouge
 
 ga_tracking: UA-159983849-1
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+github:
+  repo: https://github.com/iefserge/moltenc
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
+  - jekyll-github-metadata
+  - jekyll-remote-theme

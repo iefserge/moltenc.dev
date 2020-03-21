@@ -1,7 +1,47 @@
-.side-bar {
-  background: radial-gradient(#ecebeb 15%,transparent 16%) 0 0,radial-gradient(#ecebeb 15%,transparent 16%) 5px 5px,radial-gradient(rgba(255,255,255,.1) 15%,transparent 20%) 0 1px,radial-gradient(rgba(255,255,255,.1) 15%,transparent 20%) 5px 6px;
-  background-size: 10px 10px;
-  background-color: #f5f6fa;
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-size: 0.85rem;
+}
+
+pre.highlight {
+  padding: 0.75rem 0;
+}
+
+.table-wrapper {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.site-logo {
+  display: table;
+}
+
+.site-logo:after {
+  content: "Molten C";
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 3.2rem;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.06rem;
+  color: #1d1816;
+}
+
+.aux-nav a {
+  background-image: none;
+}
+
+.aux-nav a:hover {
+  background-image: none;
+}
+
+.menu-button {
+  font-weight: 900;
 }
 
 .site-title {
@@ -40,7 +80,7 @@
 .highlight .kt { color: black; font-weight: bold } /* Keyword.Type */
 .highlight .ld { color: black } /* Literal.Date */
 .highlight .m { color: black; font-weight: bold } /* Literal.Number */
-.highlight .s { color: black } /* Literal.String */
+.highlight .s { color: #5f0000; } /* Literal.String */
 .highlight .na { color: black } /* Name.Attribute */
 .highlight .nb { color: black } /* Name.Builtin */
 .highlight .nc { color: black } /* Name.Class */
@@ -65,7 +105,7 @@
 .highlight .sc { color: black } /* Literal.String.Char */
 .highlight .sd { color: black; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: black } /* Literal.String.Double */
-.highlight .se { color: black } /* Literal.String.Escape */
+.highlight .se { color: #5f0000 } /* Literal.String.Escape */
 .highlight .sh { color: black } /* Literal.String.Heredoc */
 .highlight .si { color: black } /* Literal.String.Interpol */
 .highlight .sx { color: black } /* Literal.String.Other */
@@ -77,11 +117,6 @@
 .highlight .vg { color: black } /* Name.Variable.Global */
 .highlight .vi { color: black } /* Name.Variable.Instance */
 .highlight .il { color: black; font-weight: bold } /* Literal.Number.Integer.Long */
-
-pre {
-  background: radial-gradient(#f9f9f9 15%,transparent 16%) 0 0,radial-gradient(#f9f9f9 15%,transparent 16%) 5px 5px,radial-gradient(rgba(255,255,255,.1) 15%,transparent 20%) 0 1px,radial-gradient(rgba(255,255,255,.1) 15%,transparent 20%) 5px 6px;
-  background-size: 10px 10px;
-}
 
 .btn-blue {
   background-color: #0366d6;
