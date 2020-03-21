@@ -25,11 +25,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-github:
-  repo: https://github.com/iefserge/moltenc
-
 plugins:
   - jekyll-seo-tag
   - jekyll-titles-from-headings
-  - jekyll-github-metadata
   - jekyll-remote-theme
