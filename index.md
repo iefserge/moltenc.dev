@@ -91,4 +91,8 @@ for (var p = values; *p != null; p++) {
 
 ---
 
-[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.title }} – {{ site.description }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}){: .btn.btn-blue }
+Read more [about Molten C]({{ '/about' | absolute_url }}).
+
+---
+
+[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.title }} – {{ site.description }}&url={{ site.url }}{{ site.baseurl }}){: .btn.btn-blue }
