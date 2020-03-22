@@ -36,19 +36,20 @@ import "stdio.h" {
 
 Int main() {
   printf("Hello, World!\n") // "Hello, World!"
+  return 0
 }
 ```
 
 #### Optionals (nullable types)
 
 ```swift
-bothPositiveNumbers(Int ?x, Int ?y) {
+checkBothPositiveNumbers(Int ?x, Int ?y) {
   trace (?x && x > 0 || ?y && y > 0) ? "yes" : "no"
 }
 
-trace bothPositiveNumbers(1, 1)    // "yes"
-trace bothPositiveNumbers(1, null) // "no"
-trace bothPositiveNumbers(null, 1) // "no"
+checkBothPositiveNumbers(1, 1)    // "yes"
+checkBothPositiveNumbers(1, null) // "no"
+checkBothPositiveNumbers(null, 1) // "no"
 ```
 
 #### Enum (Algebraic data types)
@@ -59,7 +60,7 @@ enum Animal {
   lion
 }
 
-Bool isTooHeavy(Animal animal) {
+Bool isLarge(Animal animal) {
   switch (animal) {
   case .lion:
     return false
@@ -68,9 +69,9 @@ Bool isTooHeavy(Animal animal) {
   }
 }
 
-trace isTooHeavy(.elephant{weight = 12000}) // true
-trace isTooHeavy(.elephant{weight = 6000})  // false
-trace isTooHeavy(.lion)                     // false
+trace isLarge(.elephant{weight = 12000}) // true
+trace isLarge(.elephant{weight = 6000})  // false
+trace isLarge(.lion)                     // false
 ```
 
 #### Raw Pointers
