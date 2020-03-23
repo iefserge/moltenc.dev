@@ -26,10 +26,24 @@ pre.highlight {
   position: relative;
   padding-left: 3.2rem;
   height: 100%;
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: -0.06rem;
-  color: #1d1816;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03rem;
+  color: white;
+}
+
+.navigation-list-link.active {
+  color: white;
+}
+
+@media (min-width: 50rem) {
+  .side-bar {
+    border-right: none;
+  }
+}
+
+a:not([class]) {
+  background-image: linear-gradient(#f86933 0%, #f86933 100%);
 }
 
 .aux-nav a {
@@ -48,6 +62,12 @@ pre.highlight {
   font-weight: 800;
 }
 
+@media (min-width: 50rem) {
+  .site-header {
+    border-bottom: 1px solid #2d201d;
+  }
+}
+
 .highlight .hll { background-color: black; font-weight: 700; }
 .highlight .c { color: black; font-style: italic } /* Comment */
 .highlight .err { color: black; border: 1px solid black } /* Error */
@@ -60,7 +80,7 @@ pre.highlight {
 .highlight .p { color: black; font-weight: bold } /* Punctuation */
 .highlight .cm { color: black; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: black; font-style: italic } /* Comment.Preproc */
-.highlight .c1 { color: #cf1020; font-style: italic } /* Comment.Single */
+.highlight .c1 { color: #f86933; font-style: italic } /* Comment.Single */
 .highlight .cs { color: black; font-style: italic } /* Comment.Special */
 .highlight .gd { color: black } /* Generic.Deleted */
 .highlight .ge { color: black; font-style: italic } /* Generic.Emph */
@@ -125,7 +145,7 @@ pre.highlight {
 }
 
 .btn-blue,.btn-blue:hover,.btn-blue:focus,.btn-blue:active {
-  background-color: #cf1020;
+  background-color: #f86933;
   background-image: none;
   box-shadow: 0 0 0 0 black !important;
   font-weight: 400;
