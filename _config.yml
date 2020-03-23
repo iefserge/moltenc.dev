@@ -1,4 +1,4 @@
-remote_theme: pmarsceill/just-the-docs
+remote_theme: moltenc/just-the-docs
 search_enabled: false
 footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
 aux_links:
@@ -29,6 +29,9 @@ sass:
 twitter:
   username: iefserge
   card: summary
+
+github_edit_repository: iefserge/moltenc.dev
+github_edit_text: Edit this page on GitHub
 
 defaults:
   - scope:
