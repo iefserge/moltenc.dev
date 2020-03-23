@@ -6,11 +6,11 @@ aux_links:
     - "/about"
 
 title: Molten C
-tagline: Yet another systems programming language
-description: Yet another systems programming language
+tagline: Molten C
+description: Modern low-level non-object-oriented programming language based on C
 url: https://moltenc.dev
 author: iefserge
-logo: /logo.png
+logo: https://moltenc.dev/logo.png
 image:
   path: /logo.png
   height: 256
@@ -20,10 +20,21 @@ markdown: kramdown
 highlighter: rouge
 
 ga_tracking: UA-159983849-1
+twitter_text: "Molten C – yet another “systems” programming language"
 
 sass:
   sass_dir: _sass
   style: compressed
+
+twitter:
+  username: iefserge
+  card: summary
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://moltenc.dev/logo.png
 
 plugins:
   - jekyll-seo-tag

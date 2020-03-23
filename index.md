@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Molten C
 nav_order: 1
 ---
 # __Molten C__ -- yet another "systems" programming language
@@ -96,4 +96,4 @@ Read more [about Molten C]({{ '/about' | absolute_url }}).
 
 ---
 
-[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.title }} – {{ site.description }}&url={{ site.url }}{{ site.baseurl }}){: .btn.btn-blue }
+[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.twitter_text | escape }}&url={{ site.url }}{{ site.baseurl }}){: .btn.btn-blue }

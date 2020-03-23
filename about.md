@@ -75,4 +75,4 @@ around summer or fall 2020.
 
 ---
 
-[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.title }} – {{ site.description }}&url={{ site.url }}{{ site.baseurl }}){: .btn.btn-blue }
+[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.twitter_text | escape }}&url={{ site.url }}{{ site.baseurl }}){: .btn.btn-blue }
