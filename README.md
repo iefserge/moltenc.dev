@@ -6,7 +6,7 @@ Website uses [Jekyll](https://jekyllrb.com/), [Just the Docs](https://github.com
 
 ## Contributing
 
-Please open an issue or submit pull request to this repository to contribute.
+Please open an issue or submit a pull request to this repository to contribute.
 
 ## License
 
