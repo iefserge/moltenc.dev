@@ -43,13 +43,14 @@ Int main() {
 #### Optionals (nullable types)
 
 ```swift
-checkBothPositiveNumbers(Int ?x, Int ?y) {
-  trace (?x && x > 0 || ?y && y > 0) ? "yes" : "no"
+atLeastOnePositiveNumber(Int ?x, Int ?y) {
+  trace (?x && x > 0 || ?y && y > 0) ? "found" : "nope"
 }
 
-checkBothPositiveNumbers(1, 1)    // "yes"
-checkBothPositiveNumbers(1, null) // "no"
-checkBothPositiveNumbers(null, 1) // "no"
+atLeastOnePositiveNumber(1, 1)     // "found"
+atLeastOnePositiveNumber(1, null)  // "found"
+atLeastOnePositiveNumber(null, 1)  // "found"
+atLeastOnePositiveNumber(null, -1) // "nope"
 ```
 
 #### Enum (Algebraic data types)
