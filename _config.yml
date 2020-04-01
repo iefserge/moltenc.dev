@@ -1,9 +1,6 @@
 remote_theme: moltenc/just-the-docs
 search_enabled: false
 footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
-aux_links:
-  "GitHub<span class=\"label label-yellow\">COMING SOON</span>":
-    - "/about"
 
 title: Molten C
 tagline: Molten C
