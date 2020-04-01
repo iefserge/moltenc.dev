@@ -25,11 +25,11 @@ pre.highlight {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.03rem;
-  color: white;
+  color: black;
 }
 
 .navigation-list-link.active {
-  color: white;
+  color: black;
 }
 
 @media (min-width: 50rem) {
@@ -59,10 +59,23 @@ a:not([class]) {
 }
 
 @media (min-width: 50rem) {
+  .site-header, .page-header {
+    border-bottom: none;
+  }
+
   .site-header {
-    border-bottom: 1px solid #2f2c29;
+    margin-top: 3rem;
+  }
+
+  .page-header {
+    display: none !important;
   }
 }
+
+.label-yellow {
+  background-color: #fff1d2;
+}
+
 
 .highlight .hll { background-color: black; font-weight: 700; }
 .highlight .c { color: black; font-style: italic } /* Comment */
