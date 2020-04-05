@@ -77,7 +77,7 @@ trace isLarge(.lion)                     // false
 
 #### Raw Pointers
 
-```swift
+```csharp
 extern var *raw malloc(Int size)
 extern Int32 puts(Byte *raw)
 extern var Byte *raw strdup(Byte *raw)
