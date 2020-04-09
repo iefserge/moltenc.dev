@@ -1,7 +1,3 @@
-remote_theme: moltenc/just-the-docs
-search_enabled: false
-footer_content: "&copy; 2020 Sergii Iefremov. Code licensed under MIT license."
-
 title: Molten C
 tagline: Molten C
 description: Modern low-level non-object-oriented programming language based on C

@@ -1,0 +1,86 @@
+.header {
+  height: 2.75rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar input {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+.sidebar input:checked ~ .nav {
+  display: block;
+}
+
+.sidebar input:checked ~ .header .menu rect {
+  fill: #f86933;
+}
+
+.title {
+  flex-grow: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logo {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.logo-text {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03rem;
+  color: black;
+}
+
+.logo svg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.nav-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  display: block;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+
+  &.active {
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+.nav {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+
+@media (min-width: 55rem) {
+  .nav {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    overflow-y: auto;
+    flex: 1 1 auto;
+  }
+}

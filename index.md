@@ -16,7 +16,7 @@ but it can import C headers and seamlessly interoperate with C libraries of any 
 
 #### Factorial
 
-```swift
+```
 Int fact(Int n) {
   if (n == 0)
     return 1
@@ -29,7 +29,7 @@ trace fact(5) // 120
 
 #### C interop and printf
 
-```swift
+```
 import "stdio.h" {
   printf
 }
@@ -42,7 +42,7 @@ Int main() {
 
 #### Optionals (nullable types)
 
-```swift
+```
 atLeastOnePositiveNumber(Int ?x, Int ?y) {
   trace (?x && x > 0 || ?y && y > 0) ? "found" : "nope"
 }
@@ -55,7 +55,7 @@ atLeastOnePositiveNumber(null, -1) // "nope"
 
 #### Enum (Algebraic data types)
 
-```swift
+```
 enum Animal {
   elephant {Int weight}
   lion
@@ -77,7 +77,7 @@ trace isLarge(.lion)                     // false
 
 #### Raw Pointers
 
-```csharp
+```
 extern var *raw malloc(Int size)
 extern Int32 puts(Byte *raw)
 extern var Byte *raw strdup(Byte *raw)
@@ -97,4 +97,4 @@ Read more [about Molten C]({{ '/about' | absolute_url }}).
 
 ---
 
-[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.twitter_text | escape }}&url={{ site.url }}{{ site.baseurl }}){: .btn.btn-blue }
+[Tweet about this &#x2192;](https://twitter.com/intent/tweet?text={{ site.twitter_text | escape }}&url={{ site.url }}{{ site.baseurl }}){: .btn }

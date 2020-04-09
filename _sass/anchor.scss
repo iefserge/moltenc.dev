@@ -1,0 +1,21 @@
+.anchor {
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0.3;
+}
+
+.anchor:hover {
+  opacity: 1;
+}
+
+h1 .anchor {
+  visibility: hidden;
+}
+
+h2:hover > .anchor,
+h3:hover > .anchor,
+h4:hover > .anchor,
+h5:hover > .anchor,
+h6:hover > .anchor {
+  opacity: 1;
+}
