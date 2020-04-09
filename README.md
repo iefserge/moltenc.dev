@@ -2,7 +2,7 @@
 
 # Molten C programming language website
 
-Website uses [Jekyll](https://jekyllrb.com/), [Just the Docs](https://github.com/pmarsceill/just-the-docs) theme and hosted on GitHub Pages at https://moltenc.dev.
+Website uses [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages at https://moltenc.dev.
 
 ## Contributing
 
