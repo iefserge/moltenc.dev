@@ -3,14 +3,17 @@ body {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 55rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
 .sidebar {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   flex-basis: 14rem;
   flex-grow: 1;
 }
@@ -42,6 +45,8 @@ body {
   .sidebar {
     padding-top: 3.5rem;
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .content {

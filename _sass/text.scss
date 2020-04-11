@@ -19,9 +19,11 @@ h2 {
 }
 
 h4 {
-  font-size: 0.8rem;
-  font-weight: 700;
+  margin-top: 3em;
+  font-size: 0.7rem;
+  font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 h1 strong {
@@ -39,12 +41,15 @@ hr {
 
 pre {
   overflow: auto;
-  padding: 0.75rem 0;
+  background: #fdfdfd;
+  padding: 1rem;
+  cursor: text;
+  border-radius: 5px;
 }
 
 .btn {
-  color: #fff;
-  background-color: #f86933;
+  color: #f86933;
+  background-color: black;
   background-image: none;
   box-shadow: 0 0 0 0 black !important;
   font-weight: 400;

@@ -29,6 +29,7 @@
   font-weight: 800;
   font-size: 1.5rem;
   text-decoration: none;
+  color: inherit;
 }
 
 .logo {
@@ -42,7 +43,6 @@
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.03rem;
-  color: black;
 }
 
 .logo svg {
@@ -65,7 +65,7 @@
 
   &.active {
     font-weight: 600;
-    color: #000;
+    color: inherit;
   }
 }
 

@@ -27,7 +27,7 @@ featuring fully structural type system with opt-in opaque types for data hiding.
 
 The name __Molten C__ can mean different things:
 
-- C shaped into something nicer
+- C shaped into something "nicer"
 - C needlessly shaped into something completely useless
 - extremely hot and liquified version of C
 
