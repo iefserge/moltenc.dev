@@ -6,7 +6,9 @@
     {% if node.title != null %}
       {% if node.layout == "page" %}
         <li>
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">
+            {{ node.nav_title | default: node.title }}
+          </a>
         </li>
       {% endif %}
     {% endif %}

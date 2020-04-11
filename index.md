@@ -2,6 +2,7 @@
 layout: page
 title: Molten C
 nav_order: 1
+nav_title: Home
 ---
 # __Molten C__ -- yet another "systems" programming language
 
