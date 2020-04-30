@@ -6,12 +6,13 @@ nav_title: Home
 ---
 # __Molten C__ -- yet another "systems" programming language
 
-__Molten C__ is a modern low-level non-object-oriented programming language based on C.
-Unlike other similar languages, Molten C attempts to preserve as much C syntax,
-semantics and "spirit" as possible while making language more pleasant and easy to use.
+__Molten C__ is a low-level non-object-oriented programming language based on C.
+Unlike other new languages, Molten C attempts to preserve as much C syntax
+and "spirit" as possible while making language more pleasant and easy to use.
 
 __Molten C__ is not source compatible with C,
-but it can import C headers and seamlessly interoperate with C libraries of any complexity.
+but it can import C headers and seamlessly interoperate with C libraries of
+any complexity.
 
 ---
 
