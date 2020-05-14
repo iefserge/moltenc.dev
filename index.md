@@ -55,7 +55,7 @@ atLeastOnePositiveNumber(null, 1)  // "found"
 atLeastOnePositiveNumber(null, -1) // "nope"
 ```
 
-#### Enum (Algebraic data types)
+#### Enum (algebraic data types)
 
 ```
 enum Animal {
@@ -84,7 +84,7 @@ extern var *raw malloc(Int size)
 extern Int32 puts(Byte *raw)
 extern var Byte *raw strdup(Byte *raw)
 
-var Byte *raw*raw values = malloc(sizeof(Byte *raw) * 2)
+var Byte *raw *raw values = malloc(sizeof(Byte *raw) * 2)
 values[0] = strdup("foo")
 values[1] = null
 
