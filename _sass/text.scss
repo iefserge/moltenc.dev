@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
@@ -20,14 +20,15 @@ h2 {
 
 h4 {
   margin-top: 3em;
-  font-size: 0.7rem;
-  font-weight: 900;
+  margin-bottom: 1em;
+  font-size: 0.8rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
 
 h1 strong {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -35,26 +36,26 @@ hr {
   height: 1px;
   padding: 0;
   margin: 2rem 0;
-  background-color: #f1f1f1;
+  background-color: #fff8f4;
   border: 0;
 }
 
 pre {
   overflow: auto;
-  background: #fdfdfd;
-  padding: 1rem;
+  background: #fffcfb;
+  padding: 0.88rem;
   cursor: text;
   margin: 0 -1rem;
-  border-top: 1px solid #e2e1e1;
-  border-bottom: 1px solid #e2e1e1;
-  font-size: 0.95em;
+  font-size: 0.88em;
+  border-top: 1px solid #fff8f4;
+  border-bottom: 1px solid #fff8f4;
 }
 
 @media (min-width: 55rem) {
   pre {
-    border-radius: 5px;
-    border-left: 1px solid #e2e1e1;
-    border-right: 1px solid #e2e1e1;
+    border-radius: 7px;
+    border-left: 1px solid #fff8f4;
+    border-right: 1px solid #fff8f4;
   }
 }
 

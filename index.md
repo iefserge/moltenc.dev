@@ -32,12 +32,13 @@ trace fact(5) // 120
 #### C interop and printf
 
 ```
+import library "c"
 import "stdio.h" {
   printf
 }
 
 Int main() {
-  printf("Hello, World!\n") // "Hello, World!"
+  printf("Hello, World!\n") // Hello, World!
   return 0
 }
 ```
@@ -45,14 +46,14 @@ Int main() {
 #### Optionals (nullable types)
 
 ```
-atLeastOnePositiveNumber(Int ?x, Int ?y) {
-  trace (?x && x > 0 || ?y && y > 0) ? "found" : "nope"
+Bool hasPositive(Int ?x, Int ?y) {
+  return ?x && x > 0 || ?y && y > 0
 }
 
-atLeastOnePositiveNumber(1, 1)     // "found"
-atLeastOnePositiveNumber(1, null)  // "found"
-atLeastOnePositiveNumber(null, 1)  // "found"
-atLeastOnePositiveNumber(null, -1) // "nope"
+trace hasPositive(1, 1)     // true
+trace hasPositive(1, null)  // true
+trace hasPositive(null, 1)  // true
+trace hasPositive(null, -1) // false
 ```
 
 #### Enum (algebraic data types)
@@ -63,23 +64,24 @@ enum Animal {
   lion
 }
 
-Bool isLarge(Animal animal) {
+Bool isDangerous(Animal animal) {
   switch (animal) {
   case .lion:
-    return false
+    return true
   case .elephant{weight}:
-    return weight > 10000
+    return weight > 3000
   }
 }
 
-trace isLarge(.elephant{weight = 12000}) // true
-trace isLarge(.elephant{weight = 6000})  // false
-trace isLarge(.lion)                     // false
+trace isDangerous(.elephant{weight = 12000}) // true
+trace isDangerous(.elephant{weight = 1000})  // false
+trace isDangerous(.lion)                     // true
 ```
 
 #### Raw Pointers
 
 ```
+import library "c"
 extern var *raw malloc(Int size)
 extern Int32 puts(Byte *raw)
 extern var Byte *raw strdup(Byte *raw)
