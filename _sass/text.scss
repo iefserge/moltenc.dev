@@ -42,20 +42,16 @@ hr {
 
 pre {
   overflow: auto;
-  background: #fffcfb;
+  background: #fffcf8;
   padding: 0.88rem;
   cursor: text;
   margin: 0 -1rem;
   font-size: 0.88em;
-  border-top: 1px solid #fff8f4;
-  border-bottom: 1px solid #fff8f4;
 }
 
 @media (min-width: 55rem) {
   pre {
-    border-radius: 7px;
-    border-left: 1px solid #fff8f4;
-    border-right: 1px solid #fff8f4;
+    border-radius: 3px;
   }
 }
 
