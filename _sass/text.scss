@@ -42,24 +42,18 @@ hr {
 
 pre {
   overflow: auto;
-  background: #fffcf8;
-  padding: 0.88rem;
+  padding: 0.4rem;
   cursor: text;
-  margin: 0 -1rem;
-  font-size: 0.88em;
-}
-
-@media (min-width: 55rem) {
-  pre {
-    border-radius: 3px;
-  }
+  font-size: 0.9em;
+  color: #333333;
+  line-height: 1.4;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
 }
 
 .btn {
   color: #f86933;
-  background-color: #fff1df;
-  background-image: none;
-  box-shadow: 0 0 0 0 black !important;
+  background-color: #222;
   font-weight: 400;
   outline: none !important;
   padding-top: 0.5em;
@@ -71,7 +65,6 @@ pre {
   vertical-align: baseline;
   cursor: pointer;
   line-height: 1.5;
-  border-width: 0;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-right: 0.5em;
 }
