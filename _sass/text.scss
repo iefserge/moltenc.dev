@@ -42,13 +42,14 @@ hr {
 
 pre {
   overflow: auto;
-  padding: 0.4rem;
+  padding: 0.7rem;
   cursor: text;
   font-size: 0.9em;
   color: #333333;
   line-height: 1.4;
   background: #f8f8f8;
-  border: 1px solid #ccc;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
 }
 
 .btn {
