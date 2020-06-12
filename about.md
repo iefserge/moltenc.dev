@@ -9,27 +9,29 @@ nav_order: 2
 ![Molten C]({{site.url}}/logo.svg){:width="200px"}
 
 __Molten C__ is a project to create an improved version of C, explore
-an alternative evolution path for C, divergent from C++, Objective-C or other
-languages in that space.
+an alternative evolution path for C, divergent from C++, Objective-C or
+other languages in this space.
 The goal is to preserve an essence and "spirit" of C, and build on top of
-its existing libraries, including C standard library. Replacing C is a non-goal.
+existing libraries, including C standard library.
 
 __Molten C__ is not source compatible with C,
-but it can import C headers and seamlessly interoperate with C libraries. This
-is possible because Molten C can compile C code and "transpile" C headers
-on the fly. Language can be integrated into C projects file-by-file.
+but compiler can import C headers and seamlessly interoperate with C libraries.
+This is possible because Molten C can compile C code and convert C headers
+on the fly. Code in this language can be integrated into C projects
+file-by-file.
 
-This is also a non-object-oriented language, more aligned with
-data oriented design paradigm.
+This is a "non-object-oriented" language, more aligned with
+data-oriented design paradigm.
 There are no classes, interfaces or type behaviors in the language.
 It goes another direction, featuring fully structural type system with
-opt-in nominal opaque types for data hiding.
+support for opaque types for data hiding.
 
 The name __Molten C__ can mean various things:
 
-- C shaped into something "nicer"
-- C needlessly shaped into something completely useless
-- extremely hot and liquified version of C
+- reforged C
+- unusable version of C
+- language that is not SOLID
+- yet another language that has "C" in its name
 
 This language is not the best language for many programs, but it attempts
 to be really good for:
@@ -42,29 +44,29 @@ to be really good for:
 ## Implementation
 
 Molten C compiler is written in C and depends on [LLVM](http://llvm.org/) for
-code generation. This allows it to generate very fast code and rich debug
+code generation. This allows it to generate fast code and rich debug
 information.
 
 To support excellent C interop, compiler includes separate parsers for
 C and Molten C languages, as well as C
 preprocessor. Both parsers generate the same AST nodes. This
-allows not only any C headers to be imported into Molten C, but also
-Molten C compiler to compile arbitrary C source code.
+allows any C headers to be imported into Molten C, which means
+Molten C compiler can compile arbitrary C source code.
 
-There is an additional intermediate IR, that is very similar to LLVM IR,
-but a little more high level. In the future, code analysis and
+There is an additional intermediate IR, that is similar to LLVM IR,
+but more high level. In the future, code analysis and
 optimization passes can be added.
 
 ## Project Status
 
 Compiler has been in development since 2018. It went through
-multiple full and partial rewrites and experiments.
+multiple full and partial rewrites and a number of experiments.
 
 Source code is not publicly available yet. There are a few
 important missing features and refinements that need to be done before the
 initial release.
 It's hard to say when this happens, but current estimate is sometime
-around summer or fall 2020.
+during fall 2020.
 
 ## Author
 

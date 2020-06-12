@@ -4,14 +4,14 @@ title: Molten C
 nav_order: 1
 nav_title: Home
 ---
-# __Molten C__ -- yet another "systems" programming language
+# __Molten C__
 
-__Molten C__ is a low-level non-object-oriented programming language based on C.
-Unlike other new languages, Molten C attempts to preserve as much C syntax
-and "spirit" as possible while making language more pleasant and easy to use.
+__Molten C__ is _yet another_ system programming language based on C.
+It attempts to preserve core C syntax and "spirit"
+while making language more expressive and pleasant to use.
 
-__Molten C__ is not source compatible with C,
-but it can import C headers and seamlessly interoperate with C libraries of
+__Molten C__ is not a superset of C,
+but compiler can import and seamlessly interoperate with C libraries of
 any complexity.
 
 ---
@@ -56,7 +56,7 @@ trace hasPositive(null, 1)  // true
 trace hasPositive(null, -1) // false
 ```
 
-#### Enum (algebraic data types)
+#### Enum (sum types)
 
 ```
 enum Animal {
