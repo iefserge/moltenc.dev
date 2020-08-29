@@ -15,7 +15,7 @@ interoperate with C libraries of any complexity, including C standard library.
 
 #### Factorial
 
-```
+```swift
 Int fact(Int n) {
   if (n == 0)
     return 1
@@ -28,11 +28,8 @@ print(fact(5)) // 120
 
 #### C Interop
 
-```
-extern library "c"
-import library "stdio.h" {
-  printf
-}
+```clean
+import "stdio.h" {printf}
 
 export Int main() {
   printf("Hello, World!\n") // Hello, World!
@@ -42,7 +39,7 @@ export Int main() {
 
 #### Optionals
 
-```
+```swift
 Bool hasPositive(Int ?x, Int ?y) {
   return ?x && x > 0 || ?y && y > 0
 }
@@ -55,33 +52,32 @@ print(hasPositive(null, -1)) // false
 
 #### Sum Types
 
-```
+```swift
 enum Animal {
   elephant {Int weight}
   lion
 }
 
-Bool isDangerous(Animal a) {
+Bool isLargeElephant(Animal a) {
   switch (a) {
   case .lion:
-    return true
+    return false
   case .elephant{weight}:
     return weight > 3000
   }
 }
 
-print(isDangerous(.elephant{weight = 12000})) // true
-print(isDangerous(.elephant{weight = 1000}))  // false
-print(isDangerous(.lion))                     // true
+print(isLargeElephant(.elephant{weight = 12000})) // true
+print(isLargeElephant(.elephant{weight = 1000}))  // false
+print(isLargeElephant(.lion))                     // false
 ```
 
 #### Raw Pointers
 
-```
-extern library "c"
-extern var *raw malloc(Int size)
-extern Int32 puts(Byte *raw)
-extern var Byte *raw strdup(Byte *raw)
+```swift
+import "stdlib.h" {malloc, free}
+import "stdio.h" {puts}
+import "string.h" {strdup}
 
 var Byte *raw *raw values = malloc(sizeof(Byte *raw) * 2)
 values[0] = strdup("foo")
