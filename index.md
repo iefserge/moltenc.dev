@@ -8,10 +8,10 @@ nav_title: Home
 
 # __Molten C__ -- evolved C programming language
 
-This is a project to create an improved version of C, explore
+Molten C is a project to create an improved version of C, exploring
 an alternative data-oriented evolution path for C. The goal is to preserve
 an essence and "spirit" of C, and seamlessly
-interoperate with C libraries of any complexity, including C standard library.
+interoperate with C libraries of any complexity, including the C standard library.
 
 #### Factorial
 
@@ -90,10 +90,10 @@ for (var p = values; *p != null; p++) {
 
 ## Compatibility with C
 
-Molten C is not source compatible with C,
-but compiler can import C headers and interoperate with C libraries.
+Molten C has its own syntax and is not a superset of C,
+but the compiler can import C headers and interoperate with C libraries.
 This is possible because Molten C can parse C code and convert C headers
-on the fly. Code in this language can be integrated into C projects
+on the fly. Code in Molten C can be integrated into C projects
 file-by-file.
 
 ## Applications
@@ -101,7 +101,7 @@ file-by-file.
 This is a "non-object-oriented" language, more aligned with
 data-oriented design paradigm.
 There are no classes, interfaces or type behaviors in the language.
-It goes another direction, featuring fully structural type system with
+It uses another approach, featuring fully structural type system with
 support for opaque types for data hiding.
 
 The name __Molten C__ can mean various things:
@@ -110,7 +110,7 @@ The name __Molten C__ can mean various things:
 - language that is not SOLID
 - yet another language inspired by C
 
-This language is not the best language for many programs, but it attempts
+Molten C is not a general purpose program language, but it attempts
 to be really good for:
 
 - software with low latency or memory requirements
