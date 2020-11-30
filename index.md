@@ -9,12 +9,13 @@ nav_title: Home
 # __Molten C__ -- evolved C programming language
 
 __Molten C__ is a data-oriented programming language built to improve upon the C language, exploring
-another alternative evolution path for C. The guiding priciples are:
+another alternative evolution path for C.
 
-* __The "Spirit" of C__: as much as possible, preserve the C language and its underlying principles. Unless it's a significant improvement, any differences between the C and Molten C should be minimized. At the same time this is an opportunity to introduce source breaking changes which would never be accepted in C.
-* __Data Oriented Design__: embrace the natural flow of data transformed from inputs into outputs, instead of modeling the world as interconnected entities (objects).
-* __Existing Libraries__: seamlessly interoperate with C libraries of any complexity, including C standard library. No "bindings" or code rewrites should be necessary. Although, language is not a source code superset of C, it should be possible to transparently import and use any C libraries.
+__Molten C__ follows the same underlying principles as C, in an attempt to preserve the "spirit" and essence of C.
 
+__Molten C__ embraces the natural flow of data transformed from inputs into outputs, instead of modeling the world as interconnected entities (objects).
+
+__Molten C__ supports seamless interoperation with existing C libraries of any complexity, including C standard library. Although, language is not a source code superset of C, it's possible to transparently import and use any C libraries.
 
 #### Factorial
 
