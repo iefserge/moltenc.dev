@@ -93,12 +93,15 @@ import "stdlib.h" {malloc, free}
 import "stdio.h" {puts}
 import "string.h" {strdup}
 
-var Byte *raw *raw values = malloc(sizeof(Byte *raw) * 2)
-values[0] = strdup("foo")
-values[1] = null
+export Int main() {
+  var Byte *raw *raw values = malloc(sizeof(Byte *raw) * 2)
+  values[0] = strdup("foo")
+  values[1] = null
 
-for (var p = values; *p != null; p++) {
-  puts(*p) // "foo"
+  for (var p = values; *p != null; p++) {
+    puts(*p) // "foo"
+  }
+  return 0
 }
 ```
 
