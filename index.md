@@ -17,7 +17,9 @@ __Molten C__ embraces the natural flow of data transformed from inputs into outp
 
 __Molten C__ supports seamless interoperation with existing C libraries of any complexity, including C standard library. Although, language is not a source code superset of C, it's possible to transparently import and use any C libraries.
 
-#### Factorial
+### Example: Factorial
+
+Minimal changes to the C core syntax:
 
 ```swift
 Int fact(Int n) {
@@ -30,7 +32,9 @@ Int fact(Int n) {
 print(fact(5)) // 120
 ```
 
-#### C Interop
+### Example: C Interop
+
+Module system with explicit imports and exports, which supports C header files:
 
 ```clean
 import "stdio.h" {printf}
@@ -41,7 +45,9 @@ export Int main() {
 }
 ```
 
-#### Optionals
+### Example: Optionals
+
+Nullable types, checked by the compiler:
 
 ```swift
 Bool hasPositive(Int ?x, Int ?y) {
@@ -54,7 +60,9 @@ print(hasPositive(null, 1))  // true
 print(hasPositive(null, -1)) // false
 ```
 
-#### Sum Types
+### Example: Sum Types
+
+Tagged unions and pattern matching:
 
 ```swift
 enum Animal {
@@ -76,7 +84,9 @@ print(isLargeElephant(.elephant{weight = 1000}))  // false
 print(isLargeElephant(.lion))                     // false
 ```
 
-#### Raw Pointers
+### Example: Raw Pointers
+
+Full power of the C language with raw pointers and manual memory allocation:
 
 ```swift
 import "stdlib.h" {malloc, free}
