@@ -98,7 +98,7 @@ export Int main() {
   values[0] = strdup("foo")
   values[1] = null
 
-  for (var p = values; *p != null; p++) {
+  for (var auto p = values; *p != null; p++) {
     puts(*p) // "foo"
     free(p)
   }
