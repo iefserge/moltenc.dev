@@ -156,8 +156,7 @@ multiple full and partial rewrites and a number of experiments.
 Source code is not publicly available yet. There are a few
 important missing features and refinements that need to be done before the
 initial release.
-It's hard to say when this happens, but current estimate is sometime
-during fall 2020.
+It's hard to say when this happens, but current estimate is early 2021.
 
 ## Author
 
