@@ -19,7 +19,7 @@ __Molten C__ supports seamless interoperation with existing C libraries of any c
 
 ### Example: Factorial
 
-Minimal changes to the C core syntax:
+Minimal changes to the core C syntax:
 
 ```swift
 Int fact(Int n) {
