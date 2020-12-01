@@ -79,8 +79,8 @@ Bool isLargeElephant(Animal a) {
   }
 }
 
-print(isLargeElephant(.elephant{weight = 12000})) // true
-print(isLargeElephant(.elephant{weight = 1000}))  // false
+print(isLargeElephant((.elephant){weight = 12000})) // true
+print(isLargeElephant((.elephant){weight = 1000}))  // false
 print(isLargeElephant(.lion))                     // false
 ```
 
