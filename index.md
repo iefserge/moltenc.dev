@@ -8,23 +8,25 @@ nav_title: Home
 
 # __Molten C__ -- evolved C programming language
 
-__Molten C__ is a data-oriented programming language built to improve upon the C language, exploring
-another alternative evolution path for C.
+Systems programming language that attempts to evolve the C language,
+exploring data-oriented evolution path for C.
 
-__Molten C__ follows the same underlying principles as C, in an attempt to preserve the "spirit" and essence of C.
+Language allows seamless interop with C libraries of any complexity,
+including the C standard library. Although very similar, the language is not compatible
+with C on the source code level, but C libraries can be imported and used directly.
 
-__Molten C__ embraces the natural flow of data transformed from inputs into outputs, instead of modeling the world as interconnected entities (objects).
+#### Clean and refined syntax
 
-__Molten C__ supports seamless interoperation with existing C libraries of any complexity, including C standard library. Although, language is not a source code superset of C, it's possible to transparently import and use any C libraries.
-
-### Example: Factorial
-
-Minimal changes to the core C syntax:
+Minimal changes to the C syntax, "modern" conveniences like optional
+commas in newline-separated lists, optional parentheses around conditionals and
+optional semicolons.
+At the same time, clearly misleading or ambiguous constructs are disallowed.
 
 ```swift
 Int fact(Int n) {
-  if (n == 0)
+  if n == 0 {
     return 1
+  }
 
   return n * fact(n - 1)
 }
@@ -32,9 +34,15 @@ Int fact(Int n) {
 print(fact(5)) // 120
 ```
 
-### Example: C Interop
+#### Module system and C integration
 
-Module system with explicit imports and exports, which supports C header files:
+Explicit imports and exports prevent global namespace name collisions and
+allow for faster incremental compilation. Each Molten C file is a module and
+isolated namespace. Build system that discovers and links all files and
+libraries together is built-in into compiler and requires no configuration.
+
+C header files can be seamlessly imported, with no need to create
+wrapper libraries or "bindings".
 
 ```clean
 import "stdio.h" {printf}
@@ -45,9 +53,10 @@ export Int main() {
 }
 ```
 
-### Example: Optionals
+#### Expressive and safe
 
-Nullable types, checked by the compiler:
+Optional types allow `null` to be assigned to variables of any type and
+allow compiler to diagnose unchecked usage of `null` at compile time.
 
 ```swift
 Bool hasPositive(Int ?x, Int ?y) {
@@ -60,9 +69,10 @@ print(hasPositive(null, 1))  // true
 print(hasPositive(null, -1)) // false
 ```
 
-### Example: Sum Types
-
-Tagged unions and pattern matching:
+Extended enumeration type works like a tagged union, it can hold additional
+data that is embedded into cases. Pattern matching is supported and compiler
+can verify exhaustiveness of `switch` statements, where all possible cases must
+be handled.
 
 ```swift
 enum Animal {
@@ -71,10 +81,10 @@ enum Animal {
 }
 
 Bool isLargeElephant(Animal a) {
-  switch (a) {
+  switch a {
   case .lion:
     return false
-  case .elephant{weight}:
+  case .elephant {weight}:
     return weight > 3000
   }
 }
@@ -84,9 +94,10 @@ print(isLargeElephant((.elephant){.weight = 1000}))  // false
 print(isLargeElephant(.lion))                        // false
 ```
 
-### Example: Raw Pointers
+#### Raw Pointers And Memory Access
 
-Full power of the C language with raw pointers and manual memory allocation:
+All features of the C language, including raw pointers, manual
+memory allocation, bitfields and unions.
 
 ```swift
 import "stdlib.h" {malloc, free}
@@ -98,7 +109,7 @@ export Int main() {
   values[0] = strdup("foo")
   values[1] = null
 
-  for (var auto p = values; *p != null; p++) {
+  for var auto p = values; *p != null; p++ {
     puts(*p) // "foo"
     free(p)
   }
@@ -110,21 +121,21 @@ export Int main() {
 
 ## Compatibility with C
 
-Molten C has its own syntax and is not a superset of C,
+Molten C syntax is not a superset of C,
 but the compiler can import C headers and interoperate with C libraries.
 This is possible because Molten C can parse C code and convert C headers
 on the fly. Code in Molten C can be integrated into C projects
-file-by-file.
+one file at a time.
 
 ## Applications
 
-This is a "non-object-oriented" language, more aligned with
-data-oriented design paradigm.
+This is a "non-object-oriented" language, much more aligned with
+the data-oriented design paradigm.
 There are no classes, interfaces or type behaviors in the language.
 It uses another approach, featuring fully structural type system with
 support for opaque types for data hiding.
 
-The name __Molten C__ can mean various things:
+The name Molten C can mean various things:
 
 - reforged C
 - language that is not SOLID
@@ -136,7 +147,7 @@ to be really good for:
 - software with low latency or memory requirements
 - low level software like operating systems or hardware drivers
 - graphics software like renderers or games
-- WebAssembly programs
+- WebAssembly programs that need to be small in size
 
 ## Implementation
 
@@ -154,20 +165,25 @@ There is an additional intermediate IR, that is similar to LLVM IR,
 but more high level. In the future, code analysis and
 optimization passes can be added.
 
+## Yet another new language?
+
+Molten C attempts to preserve the "spirit" of C, evolving it into more
+expressive and safe C. Data-oriented design paradigm had a large influence on
+the design of the language.
+
 ## Project Status
 
 Compiler has been in development since 2018. It went through
 multiple full and partial rewrites and a number of experiments.
 
-Source code is not publicly available yet. There are a few
-important missing features and refinements that need to be done before the
-initial release.
-It's hard to say when this happens, but current estimate is early 2021.
+Source code is not publicly available yet. A few
+important features and refinements are missing and need to be done before the
+initial release. Current open-source release estimate is late 2021.
 
 ## Author
 
 |---|---|
-|![Serge](https://avatars1.githubusercontent.com/u/6034700?s=460&v=4){:width="80px" style="border-radius:10px;margin-right:1rem;"}|**Sergii Iefremov (Serge)**<br>[Github](https://github.com/iefserge) [Twitter](https://twitter.com/iefserge)|
+|![Serge](https://avatars1.githubusercontent.com/u/6034700?s=460&v=4){:width="60px" style="border-radius:10px;margin-right:1rem;"}|**Sergii Iefremov (Serge)**<br>[Github](https://github.com/iefserge) [Twitter](https://twitter.com/iefserge)|
 
 
 ---

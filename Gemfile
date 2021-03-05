@@ -5,3 +5,4 @@ gem "jekyll-remote-theme"
 gem 'jekyll-seo-tag'
 gem 'jekyll-titles-from-headings'
 gem "jekyll-github-metadata"
+gem "webrick", "~> 1.7"

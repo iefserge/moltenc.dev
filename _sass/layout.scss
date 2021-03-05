@@ -1,5 +1,6 @@
 body {
   line-height: 1.5;
+  font-size: 18px;
   color: #222222;
 }
 
@@ -15,6 +16,10 @@ body {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 100%;
+}
+
+table {
+  font-size: 0.95rem;
 }
 
 @media (min-width: 55rem) {
